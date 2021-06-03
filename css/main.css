@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+}
+
+body {
+  font-family: "Josefin Sans";
+}
+
+body div.Parent-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+body div.Parent-container div.Left-side-container {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Logo-container img.Logo-ele {
+  width: 100px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Text-container {
+  margin-top: 70px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Text-container h1.Heading-ele {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 65px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Text-container h1.Heading-ele span.First-heading {
+  font-size: 50px;
+  font-weight: 300;
+  color: #ce9797;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Text-container h1.Heading-ele span.Coming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: #413a3a;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Text-container p.Paragraph-ele {
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0px;
+  margin-right: 180px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Email-address-field {
+  margin-top: 35px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Email-address-field div.Email-address-ele {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  border-radius: 50px;
+  border: 0.1px solid #ce9797;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Email-address-field div.Email-address-ele input.Email-field {
+  border: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 400px;
+  height: 50px;
+  z-index: 1;
+  color: #ce9797;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Email-address-field div.Email-address-ele input.Email-field::-webkit-input-placeholder {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-left: 30px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Email-address-field div.Email-address-ele input.Email-field:-ms-input-placeholder {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-left: 30px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Email-address-field div.Email-address-ele input.Email-field::-ms-input-placeholder {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-left: 30px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Email-address-field div.Email-address-ele input.Email-field::placeholder {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-left: 30px;
+}
+
+body div.Parent-container div.Left-side-container div.Main-container div.Email-address-field div.Email-address-ele a.Arrow-ele {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  height: 50px;
+  width: 110px;
+  border-radius: 30px;
+  z-index: 999;
+}
+
+body div.Parent-container div.Right-side-container {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+body div.Parent-container div.Right-side-container div.Right-side-image {
+  height: 100vh;
+  max-width: 100%;
+}
+
+body div.Parent-container div.Right-side-container div.Right-side-image img.Hero-image {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=main.css.map */

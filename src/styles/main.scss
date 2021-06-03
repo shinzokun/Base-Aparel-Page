@@ -1,0 +1,189 @@
+// Utillities 
+
+    // Colors 
+    
+        // Primary 
+        $Desaturated-Red: hsl(0, 36%, 70%);
+        $Soft-Red: hsl(0, 93%, 68%);
+
+        // Neutral
+        $Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+        // Gradients
+        $First-Gradient: webkit-linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        $Second-Gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+    // Typography
+
+        // Font Size 
+        $primary-size: 16px;
+
+        // Font Import
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap'); // -- 300, 400, 600
+
+        // Font Variable
+        $primary-font: 'Josefin Sans';
+
+        // Image Import
+        $background-image: url("/images/bg-pattern-desktop.svg");
+        
+
+// Main Style 
+
+    // All Selector Base 
+    *
+    {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        border: 0%;
+    }
+
+    body
+    {
+        font-family: $primary-font;
+
+        div.Parent-container
+        {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+
+            div.Left-side-container
+            {
+                flex-grow: 2;
+                background-image: $background-image;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                div.Main-container
+                {
+                    margin-left: 100px;
+                    margin-top: 50px;
+
+                    div.Logo-container
+                    {
+                        img.Logo-ele
+                        {
+                            width: 100px;
+                        }
+                    }
+
+                    div.Text-container
+                    {
+                        margin-top: 70px;
+
+                        h1.Heading-ele 
+                        {
+                            display: flex;
+                            flex-direction: column;
+                            line-height: 65px;
+
+                            span.First-heading
+                            {
+                                font-size: 50px;
+                                font-weight: 300;
+                                color: $Desaturated-Red;
+                                text-transform: uppercase;
+                                letter-spacing: 15px;
+                            }
+                            
+                            span.Coming
+                            {
+                                display: flex;
+                                flex-direction: column;
+
+                                font-size: 60px;
+                                text-transform: uppercase;
+                                letter-spacing: 20px;
+                                color: $Dark-Grayish-Red;
+                            }
+                        }
+
+                        p.Paragraph-ele
+                        {
+                            // color: $Desaturated-Red;
+                            font-size: 15px;
+                            line-height: 30px;
+                            letter-spacing: 1px;
+                            background: $Second-Gradient;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+
+                            margin-top: 0px;
+                            margin-right: 180px;
+                        }
+                    }
+
+                    div.Email-address-field
+                    {
+                        margin-top: 35px;
+
+                        div.Email-address-ele
+                        {
+                            display: flex;
+                            width: 400px;
+                            border-radius: 50px;
+                            border: 0.1px solid $Desaturated-Red;
+
+                            input.Email-field
+                            {
+                                border: none;
+                                border-top-left-radius: 50px;
+                                border-bottom-left-radius: 50px;
+
+                                width: 400px;
+                                height: 50px;
+                                z-index: 1;
+                                
+                                color: $Desaturated-Red;
+
+                                &::placeholder
+                                {
+                                    background: $Second-Gradient;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    
+                                    font-size: 12px;
+                                    letter-spacing: 1px;
+                                    padding-left: 30px;
+                                }
+                            }
+                            
+                            a.Arrow-ele
+                            {
+                                display: grid;
+                                place-content: center;
+                                background: $Second-Gradient;
+
+                                height: 50px;
+                                width: 110px;
+
+                                border-radius: 30px;
+                                z-index: 999;
+                            }
+                        }
+                    }
+                }
+            }
+            div.Right-side-container
+            {
+                flex-grow: 3;
+
+                div.Right-side-image
+                {
+                    height: 100vh;
+                    max-width: 100%;
+
+                    img.Hero-image
+                    {
+                        height: 100vh;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
